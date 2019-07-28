@@ -1,4 +1,16 @@
+/* awal */
 .color {
     color: #585555;
 }
-/* penempatan color ini dicukupkan unt.tulisan logi, cart dan register saja dulu */
+/* akhir-penempatan color ini dicukupkan unt.tulisan logi, cart dan register saja dulu */
+
+
+
+/* awal */
+.text-decoration {
+    text-decoration: none;
+}
+.text-decoration:hover {
+    text-decoration: none;
+}
+/* akhir-Ini saya coba gunakan untuk menghubungkan belanjaan dengan cartnya */
