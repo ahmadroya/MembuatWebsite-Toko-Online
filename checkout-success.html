@@ -7,9 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Login-CIShop</title>
-      <!-- Link Css Tambahan -->
-      <link rel="stylesheet" href="/Assets/css/style tambahan.css">
+    <title>Checkout Success-CIShop</title>
+    <!-- Link Css Tambahan -->
+    <link rel="stylesheet" href="/Assets/css/style tambahan.css">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
 
@@ -95,31 +95,35 @@
         <!--awal - Form Login -->
         <div class="row">
             <!-- mx-auto untuk menjadikan kolom ketengah/efek center (fungsinya mirip offset) -->
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-12">
                 <div class="card">
-                    <!--awal- Card-header, berisi nama header dari card -->
                     <div class="card-header">
-                        <h3 class="color">Login</h3>
+                        <h4 class="color">Checkout Berhasil</h4>
                     </div>
-                    <!-- akhir-Card-header -->
                     <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email"
-                                    aria-describedby="emailHelp" placeholder="Masukkan email" required autofocus>
-                                <small id="emailHelp" class="form-text text-danger">Email harus di isi</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="pass">Password</label>
-                                <input type="password" class="form-control" id="pass"
-                                    placeholder="Password" required>
-                                    <small id="emailHelp" class="form-text text-danger">Password harus di isi</small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
+                        <h5>Nomor Order: 123456123</h5>
+                        <p>Terima kaish sudah berbelanja</p>
+                        <p>Silahkan lakukan pembayaran untuk bisa kami proses selanjutnya dengan cara:</p>
+                        <ol>
+                            <li>Lakukan pembayaran pada rekening:
+                                <strong>BCA 1234567890</strong> a.n. PT. CIShop
+                            </li>
+                            <li>Sertakan keterangan dengan nomor order:
+                                <strong> 123456123</strong>
+                            </li>
+                            <li>Total pembayaran:
+                                <strong>Rp. 200.000,-</strong>
+                            </li>
+                        </ol>
+                        <p>Jika sudah, silahkan kirimkan bukti transfer dihalaman konfirmasi atau bisa klik di sini
+                            <a href="/orders-detail.html" class="color text-decoration"> <em>klik di sini !</em></a>
+                        </p>
+                        <a href="/index.html" class="btn btn-primary">
+                            <i class="fas-fa-angle-left">Kembali</i>
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div>
         <!--akhir - Form Login -->
