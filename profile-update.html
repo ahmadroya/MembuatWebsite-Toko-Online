@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Register-CIShop</title>
+    <title>Profile-Update-CIShop</title>
     <!-- Link Css Tambahan -->
     <link rel="stylesheet" href="/Assets/css/style tambahan.css">
 
@@ -92,16 +92,32 @@
     <!--akhir Navbar - Navbar yang light dari kiri ke kanan -->
 
     <main role="main" class="container">
-        <!--awal - Form Login -->
+        <!--awal - orders user -->
         <div class="row">
-            <!-- mx-auto untuk menjadikan kolom ketengah/efek center (fungsinya mirip offset) -->
-            <div class="col-md-8 mx-auto">
-                <div class="card">
-                    <!--awal- Card-header, berisi nama header dari card -->
+            <div class="col-md-3">
+                <div class="card mb-3">
                     <div class="card-header">
-                        <h3 class="color">Register</h3>
+                        <h4 class="color">Menu</h4>
                     </div>
-                    <!-- akhir-Card-header -->
+                    <div class="card-body">
+                        <div class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <a href="/profile.html">Profile</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="/orders.html">Orders</a>
+                            </li>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header">
+                        Formulir Profile
+                    </div>
                     <div class="card-body">
                         <form>
                             <div class="form-group">
@@ -118,22 +134,24 @@
                             </div>
                             <div class="form-group">
                                 <label for="pass">Password</label>
-                                <input type="password" class="form-control" id="pass" placeholder="Password" required>
+                                <input type="password" class="form-control" id="pass" placeholder="Password">
                                 <small id="emailHelp" class="form-text text-danger">Password harus di isi</small>
                             </div>
                             <div class="form-group">
-                                <label for="pass2">Konfirmasi Password</label>
-                                <input type="password" class="form-control" id="pass2" placeholder="konfirmasi Password"
-                                    required>
+                                <label for="">Foto</label> <br>
+                                <input type="file" id="" name="photo">
                                 <small id="emailHelp" class="form-text text-danger">Password harus sama</small>
                             </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!--akhir - Form Login -->
+        </div>
+        </div>
+        <!--akhir - orders user -->
     </main>
     <script src="/Assets/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="/Assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

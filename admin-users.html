@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Register-CIShop</title>
+    <title>Admin-User-CIShop</title>
     <!-- Link Css Tambahan -->
     <link rel="stylesheet" href="/Assets/css/style tambahan.css">
 
@@ -95,40 +95,75 @@
         <!--awal - Form Login -->
         <div class="row">
             <!-- mx-auto untuk menjadikan kolom ketengah/efek center (fungsinya mirip offset) -->
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-10 mx-auto">
                 <div class="card">
                     <!--awal- Card-header, berisi nama header dari card -->
                     <div class="card-header">
-                        <h3 class="color">Register</h3>
+                        <Span>Pengguna</Span>
+                        <a href="/admin-users-form.html" class="btn btn-sm btn-secondary">Tambah</a>
+                        <div class="float-right">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-sm text-center"
+                                        placeholder="cari">
+                                    <div class="form-group-append">
+                                        <button class="btn btn-secondary btn-sm" type="Submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <!-- menjadikan seolah mengosongkan isian tampilan (menghapus)-->
+
+                                        <a href="" class="btn btn-secondary btn-sm">
+                                            <i class="fas fa-eraser"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
                     <!-- akhir-Card-header -->
                     <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="nama">Nama</label>
-                                <input type="text" class="form-control" id="nama" aria-describedby="emailHelp"
-                                    placeholder="Masukkan nama" required autofocus>
-                                <small id="emailHelp" class="form-text text-danger">Nama harus di isi</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    placeholder="Masukkan email" required>
-                                <small id="emailHelp" class="form-text text-danger">Email harus di isi</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="pass">Password</label>
-                                <input type="password" class="form-control" id="pass" placeholder="Password" required>
-                                <small id="emailHelp" class="form-text text-danger">Password harus di isi</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="pass2">Konfirmasi Password</label>
-                                <input type="password" class="form-control" id="pass2" placeholder="konfirmasi Password"
-                                    required>
-                                <small id="emailHelp" class="form-text text-danger">Password harus sama</small>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </form>
+                        <div class="card-body">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Pengguna</th>
+                                        <th scope="col">E-mail</th>
+                                        <th scope="col">Role</th>
+                                        <th scope="col">Status</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <p>
+                                                <img src="http://imgplaceholder.com/70x70" alt=""> Admin
+                                            </p>
+                                        </td>
+
+
+                                        <td>Admin@gmal.com/</td>
+                                        <td>Admin</td>
+                                        <td>Aktif</td>
+                                        <td>
+                                            <form action="#">
+                                                <a href="#" class="" id="care">
+                                                    <button class="btn btn-sm"> <i class="fas fa-edit text-info"></i>
+                                                    </button>
+                                                </a>
+                                                <button class="btn"> <i class="fas fa-trash text-danger" type="sumit"
+                                                        onclick="return,confirm('Are You Sure?')"></i>
+                                                </button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
                     </div>
                 </div>
             </div>
