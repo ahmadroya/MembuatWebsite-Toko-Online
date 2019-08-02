@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Orders-detail - CIShop</title>
+    <title>Admin-Order-CIShop</title>
     <!-- Link Css Tambahan -->
     <link rel="stylesheet" href="/Assets/css/style tambahan.css">
 
@@ -93,79 +93,94 @@
     <!--akhir Navbar - Navbar yang light dari kiri ke kanan -->
 
     <main role="main" class="container">
-        <!--awal - orders user -->
+        <!--awal - Form Login -->
         <div class="row">
-            <div class="col-md-3">
-                <div class="card mb-3">
+            <!-- mx-auto untuk menjadikan kolom ketengah/efek center (fungsinya mirip offset) -->
+            <div class="col-md-10 mx-auto">
+                <div class="card">
+                    <!--awal- Card-header, berisi nama header dari card -->
                     <div class="card-header">
-                        <h4 class="color">Menu</h4>
+                        <Span>Order</Span>
+                        <div class="float-right">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-sm text-center"
+                                        placeholder="cari">
+                                    <div class="form-group-append">
+                                        <button class="btn btn-secondary btn-sm" type="Submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <!-- menjadikan seolah mengosongkan isian tampilan (menghapus)-->
+
+                                        <a href="" class="btn btn-secondary btn-sm">
+                                            <i class="fas fa-eraser"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
-                    <div class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <a href="/profile.html">Profile</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="/orders.html">Orders</a>
-                        </li>
-                    </div>
+                    <!-- akhir-Card-header -->
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Nomor</th>
+                                    <th>Tanggal</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Yang pertama -->
+                                <tr>
+                                    <td>
+                                        <a href="/admin-order-detail.html"><strong>#123456789</strong></a>
+                                    </td>
+                                    <td>2019/05/20</td>
+                                    <td>Rp. 200.000,-</td>
+                                    <td>
+                                        <span class="badge badge-pill badge-warning">Menunggu Pembayaran</span>
+                                    </td>
+                                </tr>
 
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="col-md-12 mb-3">
-                    <div class="card">
-                        <div class="card-header">
-                            Detail Order #123456789
-                            <div class="float-right">
-                                <span class="badge badge-pill badge-warning">Menunggu Pembayaran</span>
-                            </div>
-                        </div>
-
-                        <div class="card-body">
-
-                            <p>Nama: Nama Penerima</p>
-                            <p>Telepon: 082 396 400 401</p>
-                            <p>Alamat: jl. sesama kita saling bantu</p>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th class="text-center">Harga</th>
-                                        <th class="text-center">Jumlah</th>
-                                        <th class="text-center">Subtotal</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- Yang pertama -->
-                                    <tr>
-                                        <td>
-                                            <p><img src="http://placehold.co/50x50" alt=""> <strong>Product
-                                                    Title</strong></p>
-                                        </td>
-                                        <td class="text-center">Rp. 100.000,-</td>
-                                        <td class="text-center">1</td>
-                                        <td class="text-center">Rp. 100.000,-</td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="3"><strong>Total</strong></td>
-                                        <td class="text-center"><strong>Rp. 200.000,-</strong></td>
-
-                                    </tr>
-                                </tbody>
-
-                            </table>
-                        </div>
-                        <div class="card-footer">
-                            <a href="/orders-confirm.html" class="btn btn-success">
-                                <i class="fas-fa-angle-left">Konfirmasi Pembayaran</i>
-                            </a>
-                        </div>
+                                <!-- batas Yang pertama -->
+                                <tr>
+                                    <td>
+                                        <a href="/orders-detail.html">#12345343463</a>
+                                    </td>
+                                    <td>2019/05/19</td>
+                                    <td>Rp. 700.000,-</td>
+                                    <td>
+                                        <span class="badge badge-pill badge-success">Dikirim</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="/orders-detail.html">#1234623542678</a>
+                                    </td>
+                                    <td>2019/05/10</td>
+                                    <td>Rp. 500.000,-</td>
+                                    <td>
+                                        <span class="badge badge-pill badge-danger">Dibatalkan</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <!--akhir - orders user -->
+        <!--akhir - Form Login -->
     </main>
     <script src="/Assets/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="/Assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
