@@ -100,55 +100,25 @@
                 <div class="card">
                     <!--awal- Card-header, berisi nama header dari card -->
                     <div class="card-header">
-                        <Span>Tambah Pengguna</Span>
+                        <Span>Tambah Kategori</Span>
 
                     </div>
                     <!-- akhir-Card-header -->
                     <div class="card-body">
                         <form>
                             <div class="form-group">
-                                <label for="nama">Nama</label>
-                                <input type="text" class="form-control" id="nama" aria-describedby="emailHelp"
-                                    placeholder="Masukkan nama" required autofocus>
-                                <small id="emailHelp" class="form-text text-danger">Nama harus di isi</small>
+                                <label for="title">Kategori</label>
+                                <input type="text" class="form-control" id="title" onkeyup="createSlug()" aria-describedby="emailHelp"
+                                     required autofocus>
+                                <small id="emailHelp" class="form-text text-danger">Kategori harus di isi</small>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                                    placeholder="Masukkan email" required>
-                                <small id="emailHelp" class="form-text text-danger">Email harus di isi</small>
+                                <label for="slug">Slug</label>
+                                <input type="text" class="form-control" id="slug" aria-describedby="emailHelp"
+                                     required >
+                                <small id="emailHelp" class="form-text text-danger"></small>
                             </div>
-                            <div class="form-group">
-                                <label for="pass">Password</label>
-                                <input type="password" class="form-control" id="pass" placeholder="Password" required>
-                                <small id="emailHelp" class="form-text text-danger">Password harus di isi</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Role</label>
-                                <select name="role" id="" class="form-control">
-                                    <option value="admin">Admin</option>
-                                    <option value="member">Member</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Status</label>
-                                <br>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" id="1" name="status" class="form-check-input" value="1">
-                                    <label for="1" class="form-check-label">Aktif</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" id="2" name="status" class="form-check-input" value="1">
-                                    <label for="2" class="form-check-label">Non-Aktif</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="">Photo</label>
-                                <br>
-                                <input type="file" name="photo" id="">
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Register</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
                     </div>
                 </div>
@@ -158,6 +128,7 @@
     </main>
     <script src="/Assets/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="/Assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/Assets/js/app.js"></script>
 </body>
 
 </html>
