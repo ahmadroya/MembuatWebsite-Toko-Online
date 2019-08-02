@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Orders-confirm - CIShop</title>
+    <title>Admin-Users-Form-CIShop</title>
     <!-- Link Css Tambahan -->
     <link rel="stylesheet" href="/Assets/css/style tambahan.css">
 
@@ -93,72 +93,68 @@
     <!--akhir Navbar - Navbar yang light dari kiri ke kanan -->
 
     <main role="main" class="container">
-        <!--awal - orders user -->
+        <!--awal - Form Login -->
         <div class="row">
-            <div class="col-md-3">
-                <div class="card mb-3">
+            <!-- mx-auto untuk menjadikan kolom ketengah/efek center (fungsinya mirip offset) -->
+            <div class="col-md-10 mx-auto">
+                <div class="card">
+                    <!--awal- Card-header, berisi nama header dari card -->
                     <div class="card-header">
-                        <h4 class="color">Menu</h4>
+                        <Span>Tambah Pengguna</Span>
+
                     </div>
-                    <div class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <a href="/profile.html">Profile</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="/orders.html">Orders</a>
-                        </li>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="col-md-12 mb-3">
-                    <div class="card">
-                        <div class="card-header">
-                            Konfirmasi Order #123456789
-                            <div class="float-right">
-                                <span class="badge badge-pill badge-info">Menunggu Pembayaran</span>
-                            </div>
-                        </div>
-                        <form action="">
-
-                        <div class="card-body">
-
-                          <div class="form-group">
-                              <label for="">Transaksi</label>
-                              <input type="text" class="form-control" value="#01234123" readonly>
-                          </div>
-                          <div class="form-group">
-                              <label for="rek">Dari Rekening a/n</label>
-                              <input type="text" id="rek" class="form-control">
-
+                    <!-- akhir-Card-header -->
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" class="form-control" id="nama" aria-describedby="emailHelp"
+                                    placeholder="Masukkan nama" required autofocus>
+                                <small id="emailHelp" class="form-text text-danger">Nama harus di isi</small>
                             </div>
                             <div class="form-group">
-                                    <label for="ang">Sebesar</label>
-                                    <input type="text" id="ang" class="form-control">
-      
-                                  </div>
-                            <div class="form-group">
-                                <label for="tex">Catatan</label>
-                                <textarea name="description" id="" cols="30" rows="5" class="form-control"></textarea>
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    placeholder="Masukkan email" required>
+                                <small id="emailHelp" class="form-text text-danger">Email harus di isi</small>
                             </div>
                             <div class="form-group">
-                                <label for="fil">Bukti Transksi</label><br>
-                                <input type="file" name="image" id="fil">
+                                <label for="pass">Password</label>
+                                <input type="password" class="form-control" id="pass" placeholder="Password" required>
+                                <small id="emailHelp" class="form-text text-danger">Password harus di isi</small>
                             </div>
-                        </div>
-                    
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-success">
-                                Konfirmasi Pembayaran
-                            </button>
-                        </div>
+                            <div class="form-group">
+                                <label for="">Role</label>
+                                <select name="role" id="" class="form-control">
+                                    <option value="admin">Admin</option>
+                                    <option value="member">Member</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Status</label>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="1" name="status" class="form-check-input" value="1">
+                                    <label for="1" class="form-check-label">Aktif</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="2" name="status" class="form-check-input" value="1">
+                                    <label for="2" class="form-check-label">Non-Aktif</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Photo</label>
+                                <br>
+                                <input type="file" name="photo" id="">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
-        <!--akhir - orders user -->
+        <!--akhir - Form Login -->
     </main>
     <script src="/Assets/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="/Assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>

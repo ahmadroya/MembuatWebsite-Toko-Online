@@ -51,6 +51,7 @@
                             <a href="/admin-category.html" class="dropdown-item">Category</a>
                             <a href="/admin-pruduct.html" class="dropdown-item">Pruduct</a>
                             <a href="/admin-order.html" class="dropdown-item">Order</a>
+                            <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
                         </div>
                     </li>
                     <!-- akhir Dropdown menu -->
@@ -123,47 +124,49 @@
                     </div>
                     <!-- akhir-Card-header -->
                     <div class="card-body">
-                        <div class="card-body">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">Pengguna</th>
-                                        <th scope="col">E-mail</th>
-                                        <th scope="col">Role</th>
-                                        <th scope="col">Status</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>
-                                            <p>
-                                                <img src="http://imgplaceholder.com/70x70" alt=""> Admin
-                                            </p>
-                                        </td>
-
-
-                                        <td>Admin@gmal.com/</td>
-                                        <td>Admin</td>
-                                        <td>Aktif</td>
-                                        <td>
-                                            <form action="#">
-                                                <a href="#" class="" id="care">
-                                                    <button class="btn btn-sm"> <i class="fas fa-edit text-info"></i>
-                                                    </button>
-                                                </a>
-                                                <button class="btn"> <i class="fas fa-trash text-danger" type="sumit"
-                                                        onclick="return,confirm('Are You Sure?')"></i>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Pengguna</th>
+                                    <th scope="col">E-mail</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <p>
+                                            <img src="http://imgplaceholder.com/70x70" alt=""> Admin
+                                        </p>
+                                    </td>
+                                    <td>Admin@gmal.com/</td>
+                                    <td>Admin</td>
+                                    <td>Aktif</td>
+                                    <td>
+                                        <form action="#">
+                                            <a href="#" class="" id="care">
+                                                <button class="btn btn-sm"> <i class="fas fa-edit text-info"></i>
                                                 </button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
+                                            </a>
+                                            <button class="btn"> <i class="fas fa-trash text-danger" type="sumit"
+                                                    onclick="return confirm('Are You Sure?')"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
