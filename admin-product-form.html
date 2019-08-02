@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Admin-Categori-CIShop</title>
+    <title>Admin-Users-Form-CIShop</title>
     <!-- Link Css Tambahan -->
     <link rel="stylesheet" href="/Assets/css/style tambahan.css">
 
@@ -100,81 +100,58 @@
                 <div class="card">
                     <!--awal- Card-header, berisi nama header dari card -->
                     <div class="card-header">
-                        <Span>Kategori</Span>
-                        <a href="/admin-category-form.html" class="btn btn-sm btn-secondary">Tambah</a>
-                        <div class="float-right">
-                            <form action="#">
-                                <div class="input-group">
-                                    <input type="text" class="form-control form-control-sm text-center"
-                                        placeholder="cari">
-                                    <div class="form-group-append">
-                                        <button class="btn btn-secondary btn-sm" type="Submit">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                        <!-- menjadikan seolah mengosongkan isian tampilan (menghapus)-->
+                        <Span>Tambah Product</Span>
 
-                                        <a href="" class="btn btn-secondary btn-sm">
-                                            <i class="fas fa-eraser"></i>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
                     </div>
                     <!-- akhir-Card-header -->
                     <div class="card-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Title</th>
-                                    <th scope="col">Slug</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Laptops</td>
-                                    <td>Laptops</td>
-                                    <td>
-                                        <form action="#">
-                                            <a href="#" class="" id="care">
-                                                <button class="btn btn-sm"> <i class="fas fa-edit text-info"></i>
-                                                </button>
-                                            </a>
-                                            <button class="btn"> <i class="fas fa-trash text-danger" type="sumit"
-                                                    onclick="return confirm('Are You Sure?')"></i>
-                                            </button>
-                                        </form>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Smartphones</td>
-                                    <td>Smartphones</td>
-                                    <td>
-                                        <form action="#">
-                                            <a href="#" class="" id="care">
-                                                <button class="btn btn-sm"> <i class="fas fa-edit text-info"></i>
-                                                </button>
-                                            </a>
-                                            <button class="btn"> <i class="fas fa-trash text-danger" type="sumit"
-                                                    onclick="return confirm('Are You Sure?')"></i>
-                                            </button>
-                                        </form>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                        </ul>
+                        <form>
+                            <div class="form-group">
+                                <label for="nama">Produk</label>
+                                <input type="text" class="form-control" id="title" onkeyup="createSlug()" aria-describedby="emailHelp"
+                                    placeholder="Masukkan nama" required autofocus>
+                                <small id="emailHelp" class="form-text text-danger">Nama harus di isi</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Harga</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    placeholder="Masukkan email" required>
+                                <small id="emailHelp" class="form-text text-danger">Email harus di isi</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Kategori</label>
+                                <select name="id_category" id="" class="form-control">
+                                    <option value="1">Laptop</option>
+                                    <option value="2">Smartphones</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Ada Stock ?</label>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="1" name="status" class="form-check-input" value="1">
+                                    <label for="1" class="form-check-label">Tersedia</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="2" name="status" class="form-check-input" value="1">
+                                    <label for="2" class="form-check-label">Kosong</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Gambar</label>
+                                <br>
+                                <input type="file" name="photo" id="">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="nama">Slug</label>
+                                <input type="text" class="form-control" id="slug" aria-describedby="emailHelp"
+                                     required >
+                                <small id="emailHelp" class="form-text text-danger">Slug harus di isi</small>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -183,6 +160,7 @@
     </main>
     <script src="/Assets/libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="/Assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/Assets/js/app.js"></script>
 </body>
 
 </html>
