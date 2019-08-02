@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Admin-Categori-CIShop</title>
+    <!-- Link Css Tambahan -->
+    <link rel="stylesheet" href="/Assets/css/style tambahan.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/Assets/css/app.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="/Assets/libs/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <!--awal Navbar - Navbar yang light dari kiri ke kanan -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <!-- class container untuk memposisikan menu pada navbar berada di tengah -->
+        <div class="container">
+            <!--awal cishop (sebenarnya berbentuk button) - yang ada tulisan link CIShopnya, mirip kayak  youtube 
+            yang kalau diklik kembali ke halaman utamanya -->
+            <a class="navbar-brand" href="/index.html">CIShop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- akhir cishop -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Awal menu sebelah kiri -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- awal Menu Home -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- akhir Menu Home -->
+                    <!-- awal Dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdown-1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Manage</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                            <a href="/admin-category.html" class="dropdown-item">Category</a>
+                            <a href="/admin-pruduct.html" class="dropdown-item">Pruduct</a>
+                            <a href="/admin-order.html" class="dropdown-item">Order</a>
+                            <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
+                        </div>
+                    </li>
+                    <!-- akhir Dropdown menu -->
+                </ul>
+                <!-- Akhir menu sebelah kiri -->
+                <!-- Awal menu sebelah kanan -->
+                <ul class="navbar-nav">
+                    <!-- awal-bagian ber-icon keranjang/Cart -->
+                    <li class="navbar-item">
+                        <a href="/cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i>Cart (0)</a>
+                    </li>
+                    <!-- akhir-bagian ber-icon keranjang/Cart -->
+                    <!-- awal-menu login -->
+                    <li class="navbar-item">
+                        <a href="/login.html" class="nav-link">Login</a>
+                    </li>
+                    <!-- akhir-menu login -->
+                    <!-- awal-menu register -->
+                    <li class="navbar-item">
+                        <a href="/register.html" class="nav-link">Register</a>
+                    </li>
+                    <!-- akhir-menu register -->
+                    <!-- awal-menu dropdown kanan -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdown-2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Admin</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-2">
+                            <a href="/profile.html" class="dropdown-item">Profile</a>
+                            <a href="/orders.html" class="dropdown-item">Orders</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </li>
+                    <!-- akhir-menu dropdown kanan -->
+                </ul>
+                <!-- Akhir menu sebelah kanan -->
+            </div>
+        </div>
+    </nav>
+    <!--akhir Navbar - Navbar yang light dari kiri ke kanan -->
+
+    <main role="main" class="container">
+        <!--awal - Form Login -->
+        <div class="row">
+            <!-- mx-auto untuk menjadikan kolom ketengah/efek center (fungsinya mirip offset) -->
+            <div class="col-md-10 mx-auto">
+                <div class="card">
+                    <!--awal- Card-header, berisi nama header dari card -->
+                    <div class="card-header">
+                        <Span>Kategori</Span>
+                        <a href="/admin-category-form.html" class="btn btn-sm btn-secondary">Tambah</a>
+                        <div class="float-right">
+                            <form action="#">
+                                <div class="input-group">
+                                    <input type="text" class="form-control form-control-sm text-center"
+                                        placeholder="cari">
+                                    <div class="form-group-append">
+                                        <button class="btn btn-secondary btn-sm" type="Submit">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                        <!-- menjadikan seolah mengosongkan isian tampilan (menghapus)-->
+
+                                        <a href="" class="btn btn-secondary btn-sm">
+                                            <i class="fas fa-eraser"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <!-- akhir-Card-header -->
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Slug</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Laptops</td>
+                                    <td>Laptops</td>
+                                    <td>
+                                        <form action="#">
+                                            <a href="#" class="" id="care">
+                                                <button class="btn btn-sm"> <i class="fas fa-edit text-info"></i>
+                                                </button>
+                                            </a>
+                                            <button class="btn"> <i class="fas fa-trash text-danger" type="sumit"
+                                                    onclick="return confirm('Are You Sure?')"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Smartphones</td>
+                                    <td>Smartphones</td>
+                                    <td>
+                                        <form action="#">
+                                            <a href="#" class="" id="care">
+                                                <button class="btn btn-sm"> <i class="fas fa-edit text-info"></i>
+                                                </button>
+                                            </a>
+                                            <button class="btn"> <i class="fas fa-trash text-danger" type="sumit"
+                                                    onclick="return confirm('Are You Sure?')"></i>
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--akhir - Form Login -->
+    </main>
+    <script src="/Assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/Assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Admin-Category-Form-CIShop</title>
+    <!-- Link Css Tambahan -->
+    <link rel="stylesheet" href="/Assets/css/style tambahan.css">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/Assets/css/app.css">
+    <!-- fontawesome CSS -->
+    <link rel="stylesheet" href="/Assets/libs/fontawesome/css/all.min.css">
+</head>
+
+<body>
+    <!--awal Navbar - Navbar yang light dari kiri ke kanan -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <!-- class container untuk memposisikan menu pada navbar berada di tengah -->
+        <div class="container">
+            <!--awal cishop (sebenarnya berbentuk button) - yang ada tulisan link CIShopnya, mirip kayak  youtube 
+            yang kalau diklik kembali ke halaman utamanya -->
+            <a class="navbar-brand" href="/index.html">CIShop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- akhir cishop -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- Awal menu sebelah kiri -->
+                <ul class="navbar-nav mr-auto">
+                    <!-- awal Menu Home -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- akhir Menu Home -->
+                    <!-- awal Dropdown menu -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdown-1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Manage</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-1">
+                            <a href="/admin-category.html" class="dropdown-item">Category</a>
+                            <a href="/admin-pruduct.html" class="dropdown-item">Pruduct</a>
+                            <a href="/admin-order.html" class="dropdown-item">Order</a>
+                            <a href="/admin-users.html" class="dropdown-item">Pengguna</a>
+                        </div>
+                    </li>
+                    <!-- akhir Dropdown menu -->
+                </ul>
+                <!-- Akhir menu sebelah kiri -->
+                <!-- Awal menu sebelah kanan -->
+                <ul class="navbar-nav">
+                    <!-- awal-bagian ber-icon keranjang/Cart -->
+                    <li class="navbar-item">
+                        <a href="/cart.html" class="nav-link"><i class="fas fa-shopping-cart"></i>Cart (0)</a>
+                    </li>
+                    <!-- akhir-bagian ber-icon keranjang/Cart -->
+                    <!-- awal-menu login -->
+                    <li class="navbar-item">
+                        <a href="/login.html" class="nav-link">Login</a>
+                    </li>
+                    <!-- akhir-menu login -->
+                    <!-- awal-menu register -->
+                    <li class="navbar-item">
+                        <a href="/register.html" class="nav-link">Register</a>
+                    </li>
+                    <!-- akhir-menu register -->
+                    <!-- awal-menu dropdown kanan -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dropdown-2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Admin</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-2">
+                            <a href="/profile.html" class="dropdown-item">Profile</a>
+                            <a href="/orders.html" class="dropdown-item">Orders</a>
+                            <a href="#" class="dropdown-item">Log Out</a>
+                        </div>
+                    </li>
+                    <!-- akhir-menu dropdown kanan -->
+                </ul>
+                <!-- Akhir menu sebelah kanan -->
+            </div>
+        </div>
+    </nav>
+    <!--akhir Navbar - Navbar yang light dari kiri ke kanan -->
+
+    <main role="main" class="container">
+        <!--awal - Form Login -->
+        <div class="row">
+            <!-- mx-auto untuk menjadikan kolom ketengah/efek center (fungsinya mirip offset) -->
+            <div class="col-md-10 mx-auto">
+                <div class="card">
+                    <!--awal- Card-header, berisi nama header dari card -->
+                    <div class="card-header">
+                        <Span>Tambah Pengguna</Span>
+
+                    </div>
+                    <!-- akhir-Card-header -->
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" class="form-control" id="nama" aria-describedby="emailHelp"
+                                    placeholder="Masukkan nama" required autofocus>
+                                <small id="emailHelp" class="form-text text-danger">Nama harus di isi</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    placeholder="Masukkan email" required>
+                                <small id="emailHelp" class="form-text text-danger">Email harus di isi</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Password</label>
+                                <input type="password" class="form-control" id="pass" placeholder="Password" required>
+                                <small id="emailHelp" class="form-text text-danger">Password harus di isi</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Role</label>
+                                <select name="role" id="" class="form-control">
+                                    <option value="admin">Admin</option>
+                                    <option value="member">Member</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Status</label>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="1" name="status" class="form-check-input" value="1">
+                                    <label for="1" class="form-check-label">Aktif</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="2" name="status" class="form-check-input" value="1">
+                                    <label for="2" class="form-check-label">Non-Aktif</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Photo</label>
+                                <br>
+                                <input type="file" name="photo" id="">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--akhir - Form Login -->
+    </main>
+    <script src="/Assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="/Assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
